@@ -1,0 +1,142 @@
+/* BASIC CSS */
+/* -------------
+-------------
+------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: rgb(0, 132, 253);
+  --primary-color-ligh: rgb(181, 221, 255);
+  --secondary-color: rgb(151, 146, 228);
+  --primary-gap: 2rem 0;
+}
+
+/* CLASS UTILITY */
+/* -------------
+-------------
+------------- */
+section {
+  padding: 3rem 0;
+}
+
+.border-1 {
+  border: 5px dotted rgb(22, 22, 185);
+}
+
+.border-2 {
+  border: 5px dotted rgb(255, 242, 0);
+}
+
+.border-3 {
+  border: 5px dotted rgb(0, 255, 0);
+}
+
+.border-4 {
+  border: 5px dotted rgb(255, 0, 60);
+}
+
+.container-l {
+  max-width: 380px;
+  width: 100%;
+  margin: auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--primary-gap);
+}
+
+.full-bg {
+  background-color: var(--secondary-color);
+}
+/* header */
+/* -------------
+-------------
+------------- */
+.container-max {
+  background-color: var(--primary-color);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav i {
+  color: white;
+  font-size: 2rem;
+  line-height: 100%;
+}
+
+/* section 1 */
+/* -------------
+-------------
+------------- */
+.card {
+  /* background-color: coral; */
+  border-radius: 1rem;
+  padding: var(--primary-gap);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color-ligh);
+  border-radius: 1.5rem;
+}
+
+.section1-img {
+  width: 75%;
+  height: auto;
+  margin-bottom: -2rem;
+}
+
+.col {
+  padding: var(--primary-gap);
+}
+
+/* section 2 */
+/* -------------
+-------------
+------------- */
+
+/* MEDIA QUERY */
+/* -------------
+-------------
+------------- */
+@media screen and (min-width: 430px) {
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
