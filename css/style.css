@@ -17,6 +17,7 @@ body {
   --primary-color: rgb(0, 132, 253);
   --primary-color-ligh: rgb(181, 221, 255);
   --secondary-color: rgb(151, 146, 228);
+  --dark-color: rgb(51, 51, 51);
   --primary-gap: 2rem 0;
 }
 
@@ -60,6 +61,11 @@ section {
 .full-bg {
   background-color: var(--secondary-color);
 }
+
+.white-bg {
+  background-color: white;
+}
+
 /* header */
 /* -------------
 -------------
@@ -92,8 +98,6 @@ nav i {
 -------------
 ------------- */
 .card {
-  /* background-color: coral; */
-  border-radius: 1rem;
   padding: var(--primary-gap);
   padding-left: 1rem;
   padding-right: 1rem;
@@ -118,7 +122,71 @@ nav i {
 /* -------------
 -------------
 ------------- */
+.section-2 img {
+  width: 75%;
+  height: auto;
+}
 
+.section-2-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.white-bg {
+  border-radius: 1.5rem;
+}
+
+.white-bg p {
+  text-align: center;
+}
+/* section 3 */
+/* -------------
+-------------
+------------- */
+.text-section-3 {
+  text-align: center;
+}
+
+.text-section-3 h2 {
+  color: var(--secondary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
+.secondary-bg img {
+  width: 75%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.section-3-col-second {
+  color: white;
+}
+
+.card-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--primary-gap);
+  border-radius: 1.5rem;
+}
+/* FOOTER */
+/* -------------
+-------------
+------------- */
+.footer-container {
+  background-color: var(--dark-color);
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: var(--primary-gap);
+}
 /* MEDIA QUERY */
 /* -------------
 -------------
