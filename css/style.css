@@ -82,6 +82,13 @@ section {
 }
 
 .basic-big-btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .basic-blue-btn {
@@ -99,9 +106,30 @@ section {
 }
 
 .basic-purple-btn {
+  padding: 0.4rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.thin-purple-btn {
+  padding: 0.3rem 0.4rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.fa-linkedin {
+  padding: 0 0.5rem;
 }
 
 .round-btn {
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
 }
 /* header */
 /* -------------
