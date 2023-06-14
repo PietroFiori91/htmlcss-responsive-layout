@@ -135,6 +135,15 @@ nav i {
   flex-direction: column;
 }
 
+.h2-section-2,
+.p-section-2 {
+  color: white;
+}
+
+.h2-section-2 {
+  clear: left;
+}
+
 .white-bg {
   border-radius: 1.5rem;
 }
@@ -162,6 +171,8 @@ nav i {
   width: 75%;
   height: auto;
   border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .section-3-col-second {
@@ -180,16 +191,24 @@ nav i {
 -------------
 ------------- */
 .section-4 h3 {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .section-4 p {
   color: black;
 }
 
-.section-4 h3 {
-  color: var(--secondary-color);
+.card-section-4 {
+  padding: var(--primary-gap) var(--primary-gap);
+  /* padding-left: var(--primary-gap); */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.card-section-4 p {
+  text-align: left;
+}
+
 /* section 5 */
 /* -------------
 -------------
@@ -235,7 +254,6 @@ h3 {
   font-size: 4rem;
 }
 
-.section-6 ul
 /* FOOTER */
 /* -------------
 -------------
@@ -249,6 +267,7 @@ footer p {
   text-align: center;
   padding: var(--primary-gap);
 }
+
 /* MEDIA QUERY */
 /* -------------
 -------------
@@ -260,6 +279,77 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  .container-l {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+  }
+  /* section 1 */
+  /* -----------
+-----------
+----------- */
+  .section-1 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .table {
+    display: table;
+  }
+
+  .card-table {
+    display: table-cell;
+  }
+
+  .section-1 .col {
+  }
+
+  .col-2-3 {
+    /* width: calc(100% / 3) * 2; */
+    /* width: 66%; */
+    flex-grow: 1;
+    flex-basis: 60%;
+  }
+
+  .col-1-3 {
+    /* width: calc(100% / 3); */
+    /* width: 33%; */
+    flex-grow: 0;
+    flex-basis: 30%;
+  }
+  /* section 3 */
+  /* -----------
+-----------
+----------- */
+  .card-section-3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-section-3 img {
+    width: 25%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  /* section 4 */
+  /* -----------
+-----------
+----------- */
+  .row-section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+    max-width: 50%;
+  }
+
+  .section-4-col {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
