@@ -67,6 +67,42 @@ section {
   background-color: white;
 }
 
+.color-white {
+  color: white;
+}
+
+.color-secondary {
+  color: var(--secondary-color);
+}
+
+.basic-btn {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.basic-big-btn {
+}
+
+.basic-blue-btn {
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.fa-apple {
+  padding: 0 0.5rem;
+}
+
+.basic-purple-btn {
+}
+
+.round-btn {
+}
 /* header */
 /* -------------
 -------------
@@ -85,11 +121,9 @@ header ul {
 
 header a {
   text-decoration: none;
-  color: white;
 }
 
 nav i {
-  color: white;
   font-size: 2rem;
   line-height: 100%;
 }
@@ -126,6 +160,7 @@ nav i {
 .section-2 img {
   width: 75%;
   height: auto;
+  padding-bottom: 5rem;
 }
 
 .section-2-col {
@@ -133,11 +168,6 @@ nav i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.h2-section-2,
-.p-section-2 {
-  color: white;
 }
 
 .h2-section-2 {
@@ -159,10 +189,6 @@ nav i {
   text-align: center;
 }
 
-.text-section-3 h2 {
-  color: var(--secondary-color);
-}
-
 .secondary-bg {
   background-color: var(--secondary-color);
 }
@@ -173,10 +199,6 @@ nav i {
   border-radius: 50%;
   aspect-ratio: 1/1;
   object-fit: cover;
-}
-
-.section-3-col-second {
-  color: white;
 }
 
 .card-section-3 {
@@ -191,12 +213,7 @@ nav i {
 -------------
 ------------- */
 .section-4 h2 {
-  color: white;
   text-align: center;
-}
-
-.section-4 h3 {
-  color: var(--secondary-color);
 }
 
 .section-4 p {
@@ -214,6 +231,10 @@ nav i {
   text-align: left;
 }
 
+.card-section-4 h2 {
+  text-align: left;
+}
+
 /* section 5 */
 /* -------------
 -------------
@@ -222,11 +243,6 @@ nav i {
   width: 50%;
   height: auto;
   border-radius: 50%;
-}
-
-.section-5 h2,
-h3 {
-  color: var(--secondary-color);
 }
 
 /* section 6 */
@@ -250,17 +266,9 @@ h3 {
   font-weight: 100;
 }
 
-.section-6 h2 {
-  color: white;
-}
-
 .section-6 h1 {
   color: rgb(248, 190, 0);
   font-size: 4rem;
-}
-
-.section-6 p {
-  color: white;
 }
 
 /* FOOTER */
@@ -272,7 +280,6 @@ h3 {
 }
 
 footer p {
-  color: white;
   text-align: center;
   padding: var(--primary-gap);
 }
@@ -353,12 +360,11 @@ footer p {
     flex-wrap: wrap;
     gap: 1rem;
     margin: auto;
-    max-width: 50%;
   }
 
   .section-4-col {
     flex-grow: 1;
-    flex-basis: 0;
+    flex-basis: calc(50% - 2rem);
   }
 
   .card-section-4 {
@@ -445,10 +451,15 @@ footer p {
     display: flex;
   }
 
-  /* section 3 */
+  /* section 4 */
   /* -----------
 -----------
 ----------- */
+  .section-4-col {
+    flex-grow: 1;
+    flex-basis: calc(33% - 2rem);
+  }
+
   .card-section-4 {
     aspect-ratio: 1/1;
   }
