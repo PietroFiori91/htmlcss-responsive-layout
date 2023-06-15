@@ -539,6 +539,15 @@ footer p {
     display: flex;
   }
 
+  .section-2-col-1 {
+    justify-content: flex-start;
+    margin-top: -1rem;
+  }
+
+  .section-2-col-2 {
+    justify-content: flex-end;
+    margin-top: 10rem;
+  }
   /* section 4 */
   /* -----------
 -----------
